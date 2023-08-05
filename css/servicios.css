@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu {
+    & img {
+        height: 100px;
+    }
+    .menu-bar {
+        max-width: 100%;
+        padding: 0 100px;
+        & ul {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            & li {
+                & a {
+                    font-size: 1.25rem;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 600;
+                    color: #151515;
+                    transition: 1s;
+                    &:hover {
+                        color: #34495E;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.logo-img {
+    height: 125px;
+    background-color: #795548;
+    display: flex;
+    justify-content: center;
+    & img {
+        height: 125px;
+        width: auto;
+    }
+}
+
+.title {
+    background-color: #4CAF50;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    & h1 {
+        margin: 0px;
+        text-shadow: 4px 7px 4px #00000080;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        color: white;
+    }
+}
+
+.info-service {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-bottom:solid 2px #d9d9d9;
+    & h2 {
+        padding: 39px 0;
+        margin: 0px;
+        font-size: 1.5rem;
+        color: #795548;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+    }
+    & p {
+        margin: 0px;
+        font-size: 1.125rem;
+        color: #151515;
+        font-family: 'Open Sans', sans-serif;
+        & span {
+            color: transparent;
+            cursor: default;
+            user-select: none;
+        }
+    }
+    & img {
+        height: auto;
+        width: 300px;
+    }
+}
+
+.title-sale {
+    padding: 38px 0;
+    margin: 0px;
+    font-size: 1.5rem;
+    color: #795548;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.card-product {
+    max-width: 100%;
+    & img {
+        width: 350px;
+        height: 350px;
+        border-radius: 10px 10px 0 0;
+    }
+    
+}
+
+.product {
+    margin-bottom: 5rem;
+    max-width: 350px;
+    background: #d9d9d9;
+    border: 1px solid #8B4513;
+    border-radius: 0 0 10px 10px !important;
+    & h4 {
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+        & button {
+            width: 100%;
+            font-size: 1.25rem;
+            color: #795548;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            background: none;
+            border: none;
+            margin: 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            & i {
+                color: #000000;
+                font-size: 32px;
+            }
+        }
+    }
+    .list-products {
+        padding: 0 5px 15px;
+        & ul {
+            margin: 0;
+            width: 100%;
+            & li {
+                margin: auto;
+                font-size: 1.125rem;
+                color: #666666;
+                font-family: 'Open Sans', sans-serif;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #795548;
+    .f-1 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        & img {
+            height: 140px;
+        }
+        & p {
+            font-size: 1.25rem;
+            font-family: 'Open Sans', sans-serif;
+            color: white;
+        }
+    }
+    .f-2 {
+        height: 430px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: #4CAF50;
+        }
+        & ul {
+            color: #ffffff;
+            & li {
+                padding: 20px 0 0 0;
+                & a {
+                    font-size: 1.125rem;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 600;
+                    color: #ffffff;
+                }
+            }
+        }  
+    }
+    .f-3 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 430px;
+        & p {
+            display: flex;
+            align-items: center;
+            font-size: 1.125rem;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+
+            & i {
+                margin: 0 0 0 5px;
+                font-size: 2.5rem;
+                color: black;
+            }
+        }
+        & img {
+            padding-top: 40px;
+            width: 50px;
+            height: auto;
+        }
+    }
+    .f-4 {
+        text-align: center;
+        font-size: 1.125rem;
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+    }
+}
+
+/*For Mobile*/
+
+@media screen and (max-width:576px) {
+    .info-service {
+        & img {
+            width: 200px;
+        }
+    }
+}
+
+/*For Tablet*/
+
+@media screen and (max-width: 768px) {
+    .title {
+        text-align: center;
+    }
+}
+
+/*For Desktop*/
+
+@media screen and (max-width:992px) {
+    .title-sale {
+        text-align: center;
+    }
+    .card-product {
+        & img {
+            width: 300px;
+            height: 300px;
+        }
+    }
+    .product {
+        max-width: 300px;
+    }
+    .f-3 {
+        display: flex;
+        align-items: center;
+    }
+}
