@@ -236,6 +236,15 @@ footer {
         & img {
             width: 200px;
         }
+        & p {
+            text-align: justify;
+            & span {
+                display: none;
+            }
+        }
+    }
+    & br {
+        display: none;
     }
 }
 

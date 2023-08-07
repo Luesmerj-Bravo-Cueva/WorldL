@@ -234,6 +234,9 @@ footer {
     .map {
         height: 400px;
     }
+    & br {
+        display: none;
+    }
 }
 
 /*For Desktop*/

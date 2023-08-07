@@ -426,6 +426,9 @@ footer {
             width: 360px;
         }
     }
+    & br {
+        display: none;
+    }
 }
 
 /*For Desktop*/

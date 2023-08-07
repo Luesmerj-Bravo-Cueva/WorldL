@@ -154,7 +154,10 @@ body {
     align-items: center;
     justify-content: center;
     & a {
-        margin: 0 20px 20px;
+        margin: 0 0 30px;
+        & img {
+            width: 150px;
+        }
     }
 }
 
@@ -239,7 +242,7 @@ footer {
     }
     .faq {
         & h3 {
-            height: 80px;
+            height: 90px;
         }
     }
 }
@@ -252,6 +255,9 @@ footer {
     }
     .title-faqs {
         text-align: center;
+    }
+    & br {
+        display: none;
     }
 }
 

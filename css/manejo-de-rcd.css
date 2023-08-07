@@ -207,11 +207,40 @@ footer {
     }
 }
 
+@media screen and (max-width:576px) {
+    .rcd-info {
+        & h2 {
+            text-align: center;
+        }
+        & h4 {
+            text-align: center;
+        }
+        & h5 {
+            text-align: center;
+        }
+        & p {
+            text-align: justify;
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
     .title {
         & h1 {
             text-align: center;
         }
+    }
+    .cards{
+        height: 400px;
+        & img{
+            &:hover{
+                width: 250px;
+
+            }
+        }
+    }
+    & br {
+        display: none;
     }
 }
 
