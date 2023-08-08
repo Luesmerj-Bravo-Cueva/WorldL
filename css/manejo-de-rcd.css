@@ -57,7 +57,7 @@ body {
     color: white;
     & h1 {
         margin: 0px;
-        text-shadow: 4px 7px 4px #00000080;
+        text-shadow: 5px 5px 18px #00000027;
         font-family: 'Montserrat', sans-serif;
         font-size: 2rem;
         font-weight: 700;
@@ -94,11 +94,6 @@ body {
         font-size: 1.125rem;
         color: #151515;
         font-family: 'Open Sans', sans-serif;
-        & span {
-            color: transparent;
-            cursor: default;
-            user-select: none;
-        }
     }
 }
 
@@ -219,7 +214,7 @@ footer {
             text-align: center;
         }
         & p {
-            text-align: justify;
+            padding: 0 25px;
         }
     }
 }
@@ -230,6 +225,11 @@ footer {
             text-align: center;
         }
     }
+    .rcd-info {
+        & p {
+            text-align: justify;
+        }
+    }
     .cards{
         height: 400px;
         & img{
@@ -238,9 +238,6 @@ footer {
 
             }
         }
-    }
-    & br {
-        display: none;
     }
 }
 

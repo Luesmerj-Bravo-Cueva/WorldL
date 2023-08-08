@@ -57,7 +57,7 @@ body {
     color: white;
     & h1 {
         margin: 0px;
-        text-shadow: 4px 7px 4px #00000080;
+        text-shadow: 5px 5px 18px #00000027;
         font-family: 'Montserrat', sans-serif;
         font-size: 2rem;
         font-weight: 700;
@@ -233,9 +233,6 @@ footer {
     }
     .map {
         height: 400px;
-    }
-    & br {
-        display: none;
     }
 }
 

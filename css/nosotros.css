@@ -57,7 +57,7 @@ body {
     color: white;
     & h1 {
         margin: 0px;
-        text-shadow: 4px 7px 4px #00000080;
+        text-shadow: 5px 5px 18px #00000027;
         font-family: 'Montserrat', sans-serif;
         font-size: 2rem;
         font-weight: 700;
@@ -65,12 +65,13 @@ body {
     }
 }
 
-.inf-project {
+.info-project {
     display: flex;
     align-items: center;
     flex-direction: column;
     border-bottom:solid 2px #d9d9d9;
     & h2 {
+        text-align: center;
         font-size: 1.5rem;
         padding: 26px 0;
         margin: 0px;
@@ -82,6 +83,7 @@ body {
         font-size: 1.125rem;
         color: #151515;
         font-family: 'Open Sans', sans-serif;
+        padding: 0 100px;
         & span {
             color: transparent;
             cursor: default;
@@ -89,6 +91,7 @@ body {
         }
     }
     & ul {
+        padding: 0 100px;
         & li {
             font-size: 1.125rem;
             color: #151515;
@@ -177,12 +180,29 @@ footer {
     }
 }
 
+@media screen and (max-width: 576px) {
+    .info-project {
+        & p {
+            padding: 0 25px;
+
+        }
+        & ul {
+            padding: 0 25px;
+        }  
+    }
+}
+
 @media screen and (max-width: 768px) {
     .title {
         text-align: center;
     }
-    & br {
-        display: none;
+    .info-project {
+        & p {
+            text-align: justify;
+        }
+        & li {
+            text-align: justify;
+        }
     }
 }
 
