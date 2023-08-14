@@ -46,26 +46,19 @@ body {
     }
 }
 
-.title {
+#title {
     background-color: #4CAF50;
-    height: 100px;
-    display: flex;
-    align-items: center;
+    padding: 34px 0;
+    text-align: center;
+    margin: 0px;
+    text-shadow: 5px 5px 18px #00000027;
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     font-weight: 700;
     color: white;
-    & h1 {
-        margin: 0px;
-        text-shadow: 5px 5px 18px #00000027;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 2rem;
-        font-weight: 700;
-        color: white;
-    }
 }
 
-#section-form {
+.section-form {
     display: flex;
     justify-content: center;
     .form {
@@ -211,34 +204,27 @@ footer {
 }
 
 /*For Mobile*/
-
-@media screen and (max-width:576px) {
-    #section-form {
-        .form {
-            width: 335px;
+@media (min-width: 320px) and (max-width: 767px) {
+    .menu {
+        .logo-desktop {
+            display: none;
+        }
+        .logo-mobile {
+            display: block !important;
         }
     }
-}
-
-/*For Tablet*/
-
-@media screen and (max-width: 768px) {
-    .title {
-        text-align: center;
-    }
-    #section-form {
+    .section-form {
         .form {
-            width: 360px;
+            width: 315px;
+            .g-recaptcha {
+                transform: scale(0.9);
+                transform-origin: 0 0;
+            }
         }
     }
     .map {
         height: 400px;
     }
-}
-
-/*For Desktop*/
-
-@media screen and (max-width:992px) {
     aside {
         display: flex;
         flex-direction: column;
@@ -250,3 +236,20 @@ footer {
     }
 }
 
+/*For Tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .section-form {
+        .form {
+            width: 600px;
+        }
+    }
+    aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .f-3 {
+        display: flex;
+        align-items: center;
+    }
+}

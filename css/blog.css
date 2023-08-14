@@ -46,23 +46,16 @@ body {
     }
 }
 
-.title {
+#title {
     background-color: #4CAF50;
-    height: 100px;
-    display: flex;
-    align-items: center;
+    padding: 34px 0;
+    text-align: center;
+    margin: 0px;
+    text-shadow: 5px 5px 18px #00000027;
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     font-weight: 700;
     color: white;
-    & h1 {
-        margin: 0px;
-        text-shadow: 5px 5px 18px #00000027;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 2rem;
-        font-weight: 700;
-        color: white;
-    }
 }
 
 .blog-article {
@@ -96,6 +89,18 @@ body {
     }
 }
 
+.btn-see-more {
+    width: 175px;
+    height: 50px;
+    color: white;
+    font-size: 1.25rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    border-radius: 15px;
+    border:1px solid #4CAF50;
+    background-color: #4CAF50;
+}
+
 .title-faqs {
     padding: 38px 0;
     margin: 0px;
@@ -111,7 +116,7 @@ body {
     border-color: #8B4513;
     & h3 {
         padding-left: 14px;
-        height: 60px;
+        padding: 20px;
         font-size: 1.25rem;
         font-family: 'Open Sans', sans-serif;
         font-weight: 700;
@@ -233,32 +238,37 @@ footer {
 }
 
 /*For Mobile*/
-
-@media screen and (max-width:576px) {
-    .title {
-        & h1 {
-            text-align: center;
+@media (min-width: 320px) and (max-width: 767px) {
+    .menu {
+        .logo-desktop {
+            display: none;
+        }
+        .logo-mobile {
+            display: block !important;
         }
     }
-}
-
-/*For Tablet*/
-
-@media screen and (max-width: 768px) {
-    .title {
-        text-align: center;
+    .logo-img {
+        .logo-lg {
+            display: none;
+        }
+        .logo-md {
+            display: block !important;
+        }
     }
     .title-faqs {
         text-align: center;
     }
-    .faq {
-        & h3 {
-            height: 90px;
-        }
+    .f-3 {
+        display: flex;
+        align-items: center;
     }
 }
 
-@media screen and (max-width: 992px) {
+/*For Tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .title-faqs {
+        text-align: center;
+    }
     .f-3 {
         display: flex;
         align-items: center;

@@ -46,23 +46,16 @@ body {
     }
 }
 
-.title {
+#title {
     background-color: #4CAF50;
-    height: 100px;
-    display: flex;
-    align-items: center;
+    padding: 34px 0;
+    text-align: center;
+    margin: 0px;
+    text-shadow: 5px 5px 18px #00000027;
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     font-weight: 700;
     color: white;
-    & h1 {
-        margin: 0px;
-        text-shadow: 5px 5px 18px #00000027;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 2rem;
-        font-weight: 700;
-        color: white;
-    }
 }
 
 .info-project {
@@ -104,8 +97,8 @@ body {
         }
     }
     & img {
-        height: 264px;
-        width: auto;
+        width: 260px;
+        height: auto;
     }
 }
 
@@ -180,33 +173,47 @@ footer {
     }
 }
 
-@media screen and (max-width: 576px) {
+/*For Mobile*/
+@media (min-width: 320px) and (max-width: 767px) {
+    .menu {
+        .logo-desktop {
+            display: none;
+        }
+        .logo-mobile {
+            display: block !important;
+        }
+    }
+    .logo-img {
+        .logo-lg {
+            display: none;
+        }
+        .logo-md {
+            display: block !important;
+        }
+    }
     .info-project {
         & p {
             padding: 0 25px;
-
+            text-align: justify;
         }
         & ul {
             padding: 0 25px;
+            & li {
+                text-align: justify;
+            }
+        }
+        & img {
+            width: 200px;
         }  
     }
-}
-
-@media screen and (max-width: 768px) {
-    .title {
-        text-align: center;
-    }
-    .info-project {
-        & p {
-            text-align: justify;
-        }
-        & li {
-            text-align: justify;
-        }
+    .f-3 {
+        display: flex;
+        align-items: center;
     }
 }
 
-@media screen and (max-width: 992px) {
+/*For Tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
     .f-3 {
         display: flex;
         align-items: center;

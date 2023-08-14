@@ -15,10 +15,11 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg p-0">
+        <nav class="navbar navbar-expand-lg p-0 mx-2">
             <div class="container-fluid px-0 menu">
                 <a class="navbar-brand" href="index.html">
-                    <img src="image/logov2desktop.png" alt="">
+                    <img src="image/logov2desktop.png" class="logo-desktop" alt="">
+                    <img src="image/logo-3.png" class="d-none logo-mobile" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -54,7 +55,7 @@
         </div>
     </header>
     <main>
-        <section id="section-us">
+        <section class="section-us">
             <div class="container px-0">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 d-flex align-items-center us">
@@ -83,7 +84,7 @@
                 </div>
             </div>
         </section>
-        <section id="section-services">
+        <section class="section-services">
             <div class="container-fluid">
                 <div class="row d-flex justify-content-center align-items-center">
                     <div class="col-12 text-center">
@@ -128,14 +129,14 @@
                 </div>
             </div>
         </section>
-        <section id="section-blog-posts">
-            <div class="container- container-fluid">
+        <section class="section-blog-posts">
+            <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
                         <h2>Entradas de Blog</h2>
                     </div>
-                    <div class="col-lg-4 col-md-12 d-flex justify-content-center align-items-center">
-                        <a href="#" class="text-decoration-none" target="_blank">
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center align-items-center">
+                        <a href="#" class="article-link" target="_blank">
                             <div class="card">
                                 <img src="image/copper.jpg" class="card-img-top" alt="...">
                                 <div class="card-body px-0">
@@ -147,8 +148,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-md-12 d-flex justify-content-center align-items-center">
-                        <a href="#" class="text-decoration-none" target="_blank">
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center align-items-center">
+                        <a href="#" class="article-link" target="_blank">
                             <div class="card">
                                 <img src="image/concret.jpg" class="card-img-top" alt="...">
                                 <div class="card-body px-0">
@@ -159,8 +160,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-md-12 d-flex justify-content-center align-items-center">
-                        <a href="#" class="text-decoration-none" target="_blank">
+                    <div class="col-lg-4 col-md-6 d-sm-none d-md-none d-lg-block d-flex justify-content-center align-items-center">
+                        <a href="#" class="article-link" target="_blank">
                             <div class="card">
                                 <img src="image/Benefits-economic.jpg" class="card-img-top" alt="...">
                                 <div class="card-body px-0">
@@ -171,14 +172,14 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-12">
-                        <a href="blog.html" class="btn" target="_blank">Más entradas de blog<i class="bi bi-arrow-right-short"></i></a>
+                    <div class="col-12 d-flex justify-content-center">
+                        <a href="blog.html" type="button" class="btn" target="_blank">Más entradas de blog<i class="bi bi-arrow-right-short"></i></a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <section id="section-form">
+    <section class="section-form">
         <div class="container form">
             <form action="" method="" class="row">
                 <div class="col-12 text-center">
@@ -244,12 +245,12 @@
     <footer>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-4 col-md-6 f-1">
+                <div class="col-lg-4 col-md-6 px-4 f-1">
                     <a href="index.html"><img src="image/logo-3.png" alt="Letra 'L' estilizada en varios colores y texturas: verde (hierba), naranja oscuro (tierra) y gris (concreto)."></a>
-                    <p>En la empresa nos comprometemos con <br>
-                        un futuro sostenible y responsable. <br>
-                        Contribuimos al cuidado del medio <br>
-                        ambiente a través del reciclaje de <br>
+                    <p>En la empresa nos comprometemos con
+                        un futuro sostenible y responsable.
+                        Contribuimos al cuidado del medio
+                        ambiente a través del reciclaje de
                         materiales de construcción y demolición.</p>
                 </div>
                 <div class="col-lg-4 col-md-6 f-2">
@@ -266,7 +267,7 @@
                    <p><i class="bi bi-telephone"></i>Teléfono: +51 987 654 321</p>
                    <p><i class="bi bi-envelope"></i>Gmail: xxxxxxx.xxxx@gmail.com</p>
                     <div>
-                        <a href="https://www.twitter.com/" target="_blank"><img src="image/twitter.png" alt="Twitter icons created by twitter design team o Elon Musk"></a>
+                        <a href="https://www.twitter.com/" target="_blank"><img src="image/twitter.png" alt="Twitter icons created by twitter design team or Elon Musk"></a>
                         <a href="https://www.instagram.com/" target="_blank"><img src="image/instagram.png" alt="Instagram icons created by Smashicons - Flaticon"></a>
                         <a href="https://web.telegram.org/k/" target="_blank"><img src="image/telegram.png" alt="Plane icons created by Freepik - Flaticon"></a>
                         <a href="https://www.facebook.com/" target="_blank"><img src="image/facebook.png" alt="Facebook icons created by Freepik - Flaticon"></a>

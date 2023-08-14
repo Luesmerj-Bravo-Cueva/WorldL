@@ -46,23 +46,16 @@ body {
     }
 }
 
-.title {
+#title {
     background-color: #4CAF50;
-    height: 100px;
-    display: flex;
-    align-items: center;
+    padding: 34px 0;
+    text-align: center;
+    margin: 0px;
+    text-shadow: 5px 5px 18px #00000027;
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     font-weight: 700;
     color: white;
-    & h1 {
-        margin: 0px;
-        text-shadow: 5px 5px 18px #00000027;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 2rem;
-        font-weight: 700;
-        color: white;
-    }
 }
 
 .info-service {
@@ -72,6 +65,7 @@ body {
     align-items: center;
     border-bottom:solid 2px #d9d9d9;
     & h2 {
+        text-align: center;
         padding: 39px 0;
         margin: 0px;
         font-size: 1.5rem;
@@ -110,8 +104,8 @@ body {
 .card-product {
     max-width: 100%;
     & img {
-        width: 350px;
-        height: 350px;
+        width: 290px;
+        height: 290px;
         border-radius: 10px 10px 0 0;
     }
     
@@ -119,7 +113,7 @@ body {
 
 .product {
     margin-bottom: 5rem;
-    max-width: 350px;
+    max-width: 290px;
     background: #d9d9d9;
     border: 1px solid #8B4513;
     border-radius: 0 0 10px 10px !important;
@@ -232,8 +226,23 @@ footer {
 }
 
 /*For Mobile*/
-
-@media screen and (max-width:576px) {
+@media (min-width: 320px) and (max-width: 767px) {
+    .menu {
+        .logo-desktop {
+            display: none;
+        }
+        .logo-mobile {
+            display: block !important;
+        }
+    }
+    .logo-img {
+        .logo-lg {
+            display: none;
+        }
+        .logo-md {
+            display: block !important;
+        }
+    }
     .info-service {
         & img {
             width: 200px;
@@ -246,22 +255,24 @@ footer {
         }
         
     }
+    .card-product {
+        & img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+    .product {
+        max-width: 200px;
+    }
 }
 
 /*For Tablet*/
-
-@media screen and (max-width: 768px) {
-    .title {
-        text-align: center;
+@media (min-width: 768px) and (max-width: 991px) {
+    .info-service {
+        & img {
+            width: 200px;
+        }
     }
-    & p {
-        text-align: justify;
-    }
-}
-
-/*For Desktop*/
-
-@media screen and (max-width:992px) {
     .title-sale {
         text-align: center;
     }

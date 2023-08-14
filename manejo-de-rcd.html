@@ -14,10 +14,11 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg p-0">
+        <nav class="navbar navbar-expand-lg p-0 mx-2">
             <div class="container-fluid px-0 menu">
                 <a class="navbar-brand" href="index.html">
-                    <img src="image/logov2desktop.png" alt="">
+                    <img src="image/logov2desktop.png" class="logo-desktop" alt="">
+                    <img src="image/logo-3.png" class="d-none logo-mobile" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -45,13 +46,12 @@
         </nav>
         <div class="container-fluid">
             <div class="row logo-img">
-                <img src="image/logo-3.png" alt="Letra 'L' estilizada en varios colores y texturas: verde (hierba), naranja oscuro (tierra) y gris (concreto).">
+                <img src="image/logo-3.png" class="logo-lg" alt="Letra 'L' estilizada en varios colores y texturas: verde (hierba), naranja oscuro (tierra) y gris (concreto).">
+                <img src="image/logov2desktop.png" class="d-none logo-md" alt="">
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row px-5 title">
-                <h1>MANEJO DE RCD</h1>
-            </div>
+        <div class="container-fluid px-0">
+            <h1 id="title">MANEJO DE RCD</h1>
         </div>
     </header>
     <main>
@@ -66,12 +66,16 @@
                     <p><strong>Vidrios:</strong> Se obtienen a partir de botellas desechadas, ventanas, mamparas, etc. Después de ser clasificados y sometidos a procesos de limpieza y fundición, se convierten en materia prima para la fabricación de nuevos productos de vidrio.</p>    
                     <p><strong>Piedras:</strong> Son materiales reutilizados en construcción y/o decoración. Después de ser recuperadas de construcciones demolidas, pueden emplearse en obras de pavimentación, en piedra chancada según la granulometria, etc.</p>   
                     <p><strong>Áridos en general:</strong> Los áridos reciclados, como arena y hormigon, se obtienen de la trituración y procesamiento de residuos de construcción y demolición. Estos materiales reciclados son utilizados como componentes esenciales para el concreto, el asfalto y otros productos de construcción, y reduciendo la cantidad de desechos destinados a vertederos.</p>
+                    <p class="d-none hidden-paragraph">Los residuos inertes que recojemos son ladrillos, concreto, vidrios, piedras y todo tipo de áridos.</p>
                     <div class="container cards px-5 py-4">
                         <img src="image/bricks.jpg" alt="">
                         <img src="image/concrete.jpg" alt="">
-                        <img src="image/Vidrios.jpg" alt="">
+                        <img src="image/glass-bottles.jpg" alt="">
                         <img src="image/rock.jpg" alt="">
-                        <img src="image/aridos.jpg" alt="">
+                        <img src="image/arid2.jpg" alt="">
+                    </div>
+                    <div class="container d-none card-hidden">
+                        <img src="image/inert.png" alt="">
                     </div>
                     <h5>NO INERTES</h5>
                     <P><strong>Metales:</strong> El reciclaje de metales es un pilar fundamental en la economía circular. Estos materiales, como cobre, aluminio, hierro, etc, son recolectados, separados y fundidos para dar origen a nuevos productos como laminas, lingotes, barras etc, para su posterior venta a industrias, el reciclaje de metales ayuda a conservar recursos valiosos y a reducir la extracción de minerales.</p>   
@@ -79,12 +83,16 @@
                     <p><strong>Plásticos:</strong> Son transformados a través de procesos de limpieza, trituración y extrusión. Estos materiales reciclados pueden emplearse en varias areas, disminuyendo su impacto ambiental.</p>    
                     <p><strong>Cartón:</strong> Obtenido a partir de cajas y embalajes usados, se somete a procesos de compactación y reutilización para la fabricación de nuevos productos o su mezcla con otros.</p>    
                     <p><strong>Madera:</strong> La reutilización de madera es una práctica cada vez más común en la industria de la construcción y el diseño. La madera reciclada, proveniente de estructuras demolidas o desechos de carpintería, puede ser restaurada y utilizada en la fabricación de tablones, vigas, puntales, etc, dándole una nueva vida y evitando la tala de árboles y fomentar la reutilización de recursos.</p>             
+                    <p class="d-none hidden-paragraph">Los residuos no inertes que recojemos son metales, yeso, plásticos, cartón y madera.</p>
                     <div class="container cards px-5 py-4">
                         <img src="image/metals.jpg" alt="">
                         <img src="image/yeso.jpg" alt="">
                         <img src="image/plastic.jpg" alt="">
                         <img src="image/woods.jpg" alt="">
                         <img src="image/cardboard.jpg" alt="">
+                    </div>
+                    <div class="container d-none card-hidden">
+                        <img src="image/not-inert.png" alt="">
                     </div>
                     <h4>RESIDUOS PELIGROSOS</h4>
                     <p><strong>Restos de madera tratada:</strong> Estos residuos provienen de maderas que han sido sometidas a tratamientos químicos para mejorar su durabilidad y resistencia a factores ambientales. Los productos químicos utilizados en el tratamiento pueden contener sustancias tóxicas y nocivas para la salud y el medio ambiente.</p>  
@@ -98,33 +106,38 @@
                     <p><strong>Envases de preservantes de madera:</strong> Contienen sustancias químicas tóxicas que se utilizan para proteger la madera de los organismos que la degradan. Sus envases deben ser tratados como residuos peligrosos.</p>        
                     <p><strong>Restos de cerámicos, baterías:</strong> Los residuos de cerámicos y baterías pueden contener metales pesados y otras sustancias tóxicas que pueden ser perjudiciales si no se gestionan adecuadamente.</p>   
                     <p><strong>Filtros de aceite, envases de lubricantes:</strong> Estos residuos contienen aceites y lubricantes usados que pueden contener contaminantes y deben ser manejados de manera adecuada para evitar la contaminación del suelo y el agua.</p>        
+                    <p class="d-none hidden-paragraph">Residuos peligrosos como envases de removedores de pinturas, aerosoles, grasa, adhesivos, líquidos para remover pintura, pinturas, pesticidas, contrachapados de madera, colas, lacas, solventes, preservantes de madera,
+                        restos de madera tratada, tubos de PVC, fluorescentes, transformadores, condensadores, planchas de fibrocemento con asbesto, pisos de vinilo asbesto, paneles divisores de asbestos, cerámicos, baterías, filtros de aceite, envases de lubricantes, etc.</p>
                     <div class="container cards px-5 py-4">
-                        <img src="image/treated_wood.png" alt="">
-                        <img src="image/paint_remover.jpg" alt="">
-                        <img src="image/grease_remover.jpg" alt="">
-                        <img src="image/paint_containers.jpg" alt="">
-                        <img src="image/Remains_fluorescent.jpg" alt="">
+                        <img src="image/treated-wood.png" alt="">
+                        <img src="image/paint-remover.jpg" alt="">
+                        <img src="image/grease-remover.jpg" alt="">
+                        <img src="image/paint-containers.jpg" alt="">
+                        <img src="image/remains-fluorescent.jpg" alt="">
                         <img src="image/pvc.png" alt="">
-                        <img src="image/fibercement_sheets.jpg" alt="">
+                        <img src="image/fibercement-sheets.jpg" alt="">
                         <img src="image/ceramics.png" alt="">
-                        <img src="image/oil_filter.jpg" alt="">
+                        <img src="image/oil-filter.jpg" alt="">
+                    </div>
+                    <div class="container d-none card-hidden">
+                        <img src="image/dangerous-residues.png" alt="">
                     </div>
                     <h2>VALORIZACIÓN</h2>
                     <h4>REUTILIZACIÓN</h4>
-                    <P>Materiales como puertas, ventanas, entre otros, que se encuentran en buen estado, promovemos su reutilización en nuevos proyectos de construcción. Al darles una segunda oportunidad, evitamos su descarte y contribuimos a una economía más circular.</P>
+                    <P class="d-block">Materiales como puertas, ventanas, entre otros, que se encuentran en buen estado, promovemos su reutilización en nuevos proyectos de construcción. Al darles una segunda oportunidad, evitamos su descarte y contribuimos a una economía más circular.</P>
                     <h4>RECICLAJE</h4>
-                    <P>Para aquellos materiales que no pueden ser reutilizados, como vidrio, concreto, entre otros, aplicamos el proceso de reciclaje. Estos materiales son triturados y sometidos a un minucioso proceso de separación y clasificación. Así, convertimos los desechos en nuevas materias primas para fabricar productos.</P>
+                    <P class="d-block">Para aquellos materiales que no pueden ser reutilizados, como vidrio, concreto, entre otros, aplicamos el proceso de reciclaje. Estos materiales son triturados y sometidos a un minucioso proceso de separación y clasificación. Así, convertimos los desechos en nuevas materias primas para fabricar productos.</P>
                     <h4>VALOR ENERGÉTICO</h4>
-                    <P>En busca de una gestión integral, aprovechamos los materiales que no pueden ser reutilizados ni reciclados para su valorización energética. Mediante la combustión controlada, generamos calor, vapor o electricidad, disminuyendo la cantidad de residuos que llegan a drenajes, ríos o playas.</P>
+                    <P class="d-block">En busca de una gestión integral, aprovechamos los materiales que no pueden ser reutilizados ni reciclados para su valorización energética. Mediante la combustión controlada, generamos calor, vapor o electricidad, disminuyendo la cantidad de residuos que llegan a drenajes, ríos o playas.</P>
                     <div class="container">
                         <div class="row px-4 py-4 d-flex justify-content-center">
                             <div class="col-4 px-0 cards-zoom">
                                 <img src="image/door-window.jpg" alt="">
                             </div>
-                            <div class="col-4 px-0 cards-zoom">
+                            <div class="col-4 px-0 cards-zoom d-none d-lg-block">
                                 <img src="image/concrete-crusher.png" alt="">
                             </div>
-                            <div class="col-4 px-0 cards-zoom">
+                            <div class="col-4 px-0 cards-zoom d-none d-md-block">
                                 <img src="image/oven.jpg" alt="">
                             </div>
                         </div>
@@ -158,7 +171,7 @@
                    <p><i class="bi bi-telephone"></i>Teléfono: +51 987 654 321</p>
                    <p><i class="bi bi-envelope"></i>Gmail: xxxxxxx.xxxx@gmail.com</p>
                     <div>
-                        <a href="https://www.twitter.com/" target="_blank"><img src="image/twitter.png" alt="Twitter icons created by twitter design team o Elon Musk"></a>
+                        <a href="https://www.twitter.com/" target="_blank"><img src="image/twitter.png" alt="Twitter icons created by twitter design team or Elon Musk"></a>
                         <a href="https://www.instagram.com/" target="_blank"><img src="image/instagram.png" alt="Instagram icons created by Smashicons - Flaticon"></a>
                         <a href="https://web.telegram.org/k/" target="_blank"><img src="image/telegram.png" alt="Plane icons created by Freepik - Flaticon"></a>
                         <a href="https://www.facebook.com/" target="_blank"><img src="image/facebook.png" alt="Facebook icons created by Freepik - Flaticon"></a>
